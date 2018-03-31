@@ -21,7 +21,7 @@ class Queue():
         assert not self.isEmpty(), 'empty queue'
         data = self.first.data
         self.first = self.first.next
-        return node.data
+        return data
 
     def peek(self):
         assert not self.isEmpty(), 'empty queue'

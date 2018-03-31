@@ -1,8 +1,10 @@
-from stack import StackWithList, Stack
+from queue import Queue
 
 if __name__ == '__main__':
-    x = Stack()
-    x.push(7)
-    x.push(9)
-    x.push(11)
-    print(x.pop(), x.pop())
+    x = Queue()
+    x.enqueue(7)
+    x.enqueue(8)
+    a = x.dequeue()
+    x.enqueue(9)
+    print(a)
+    print(x.peek())
