@@ -82,3 +82,29 @@ def dfs_postorder_rec_helper(root, path):
     dfs_postorder_rec_helper(root.left, path)
     dfs_postorder_rec_helper(root.right, path)
     path.append(root.data)
+
+
+
+
+
+
+# Adjacency lists
+
+def dfs_adjacency(start_node_idx, adjacency_list):
+    path = []
+    seen_it = set()
+    s = Stack()
+
+    s.push(start_node_idx)
+    seen_it.add(start_node_idx)
+
+    while not s.isEmpty():
+        curr_node = s.pop()
+        path.append(curr_node)
+
+        for neighbor in adjacency_list[curr_node]:
+            if neighbor not in seen_it:
+                s.push(neighbor)
+                seen_it.add(neighbor)
+
+    return path
