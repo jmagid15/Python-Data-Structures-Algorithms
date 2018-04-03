@@ -10,3 +10,5 @@ Know implementation, pros and cons, big O of the following:
 * binary search
 * mergesort
 * quicksort
+* BFS
+* DFS
