@@ -4,4 +4,4 @@ __pycache__/*
 
 # Testing/ practice files
 test.py
-practice.py
+practice*.py
